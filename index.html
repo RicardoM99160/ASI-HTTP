@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Sitio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <css-doodle click-to-update class="doodle">
+        :doodle {
+        @grid: 18 / 100vmax;
+        background: #0a0c27;
+        }
+        --hue: calc(180 + 1.5 * @row * @col);
+        background: hsl(var(--hue), 50%, 70%);
+        margin: -.5px;
+        transition: @r(.5s) ease;
+        clip-path: polygon(@pick(
+        '0 0, 100% 0, 100% 100%',
+        '0 0, 100% 0, 0 100%',
+        '0 0, 100% 100%, 0 100%',
+        '100% 0, 100% 100%, 0 100%'
+        ));
+    </css-doodle>
+
+    <div class="container vertical-center">
+        <div class="row p-3">
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/Nathaly.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Nathaly Palencia</h1>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item border-0 description p-0">PM170641</li>
+                            <li class="list-group-item border-0 description p-0">G01T</li>
+                            <li class="list-group-item border-0 p-0"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/Peluca.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title text-center p-0">Gerardo Rivera</h1>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item border-0 description p-0">RM170126</li>
+                            <li class="list-group-item border-0 description p-0">G01T</li>
+                            <li class="list-group-item border-0 p-0"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/Majano.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Ricardo Majano</h1>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item border-0 description p-0">MD170149</li>
+                            <li class="list-group-item border-0 description p-0">Grupo: 01T</li>
+                            <li class="list-group-item border-0 p-0"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/css-doodle@0.21.5/css-doodle.min.js"></script>
+</body>
+
+</html>
